@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url(2773373.webp);
 }
 
 
@@ -233,4 +234,5 @@ h1 {
     opacity: 0.7;
     background-color: white;
     color: black;
+
 }
