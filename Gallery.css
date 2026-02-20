@@ -1,0 +1,198 @@
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#background-video {
+    position: fixed;
+    /* Positions the video relative to the browser window */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    /* Ensures the video covers the full width */
+    min-height: 100%;
+    /* Ensures the video covers the full height */
+    z-index: -1;
+    /* Puts the video behind other content */
+    object-fit: cover;
+    /* Ensures the video scales to cover the area without distortion */
+}
+
+
+
+.Navigation-Bar {
+    background-color: #000000;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 2px 2px 10px;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: white inset 0px 0px 5px 1px;
+    border-radius: 10px;
+}
+
+.Navigation-Button {
+    color: white;
+    text-decoration: none;
+    margin: 0px 10px 0px 10px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 1px;
+    transition: background-color 1s ease, box-shadow 1s;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.Navigation-Button:hover {
+    background-color: rgb(11, 18, 27);
+    color: white;
+    border-radius: 3px;
+    opacity: 1px;
+    box-shadow: 2px 2px 10px rgb(1, 1, 1);
+    transition: background-color 1s ease, box-shadow 1s, color 1s, opacity 1s;
+}
+
+.box:hover .content,
+.box:active .content {
+    transition: max-height 3s ease, opacity 2s ease;
+    max-height: 1000px;
+    /* adjust to content height */
+    opacity: 1;
+
+}
+
+.Button {
+    /* More Button at navigation button */
+    background-color: rgb(11, 18, 27);
+    ;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.Button:hover {
+    background-color: rgb(11, 18, 27);
+    color: white;
+    border-radius: 3px;
+    opacity: 1;
+    box-shadow: 2px 2px 10px rgb(1, 1, 1);
+    transition: background-color 1s ease, box-shadow 1s, color 1s, opacity 1s;
+}
+
+.More-Container {
+    position: relative;
+    display: inline-block;
+}
+
+.More-Container .Drop-Down {
+    z-index: 100;
+    position: absolute;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s ease, background-color 1s ease, opacity 0.50s;
+}
+
+.More-Container .More-Items {
+    color: white;
+    transition: background-color 1s ease, box-shadow 1s, color 1s, opacity 1s;
+}
+
+.More-Container:hover .Drop-Down {
+
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.More-Items {
+    background-color: rgb(11, 18, 27);
+    display: block;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.More-Items:hover {
+    background-color: rgb(17, 69, 136);
+    color: white;
+    border-radius: 3px;
+    opacity: 1px;
+    box-shadow: 2px 2px 10px rgb(1, 1, 1);
+    transition: background-color 1s ease, box-shadow 1s, color 1s, opacity 1s;
+    text-decoration: none;
+}
+
+.All {
+    padding: 10px;
+    margin: 10px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: inset rgb(112, 111, 111) 1px 1px 20px;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+
+}
+
+.slideshow-container {
+    box-shadow: 0px 0px 10px #000;
+    border-style: outset;
+    border-width: 3px;
+    border-radius: 5px;
+    border-color: white;
+    max-width: 1000px;
+    max-height: 500px;
+    position: relative;
+    margin: 10px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+.mySlides {
+    display: none;
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.slides {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.buttonleft {
+    color: #ffffff;
+    box-shadow: inset 0px 0px 2px 1px #ffffff;
+    position: relative;
+    height: 500px;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: transparent;
+
+
+}
+
+.buttonright {
+    color: #ffffff;
+    box-shadow: inset 0px 0px 2px 1px #ffffff;
+    position: relative;
+    height: 500px;
+    margin: 10px;
+    margin-top: 30px;
+    background-color: transparent;
+}

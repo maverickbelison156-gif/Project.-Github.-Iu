@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Freshmen</title>
+    <link rel="stylesheet" href="Achievement.css">
+</head>
+
+<body>
+    <video id="background-video" autoplay muted loop>
+        <source src="Photo/Dots-Wave-.mp4" type="video/mp4">
+        <!-- You can add other sources for different formats for broader browser support -->
+    </video>
+
+    <div class="Navigation-Bar">
+        <a href="Home.html" class="Navigation-Button" target="_self">Home</a>
+        <a href="About-Me.html" class="Navigation-Button" target="_self">About Me</a>
+        <a href="Achievement.html" class="Navigation-Button" target="_self">Achievement</a>
+        <a href="Gallery.html" class="Navigation-Button" target="_self">Gallery</a>
+        <!-- <a href="" class="Navigation-Button" target="_self">More</a> -->
+        <div class="More-Container">
+            <button class="Button">More</button>
+            <div class="Drop-Down">
+                <a href="https://www.facebook.com/Mvsblsn" class="More-Items">Facebook</a>
+                <a href="https://www.tiktok.com/@mavi_060703?is_from_webapp=1&sender_device=pc"
+                    class="More-Items">TikTok</a>
+                <a href="https://www.instagram.com/mvsblsn_" class="More-Items">Instagram</a>
+                <a href="" class="More-Items">ML ID 817193819 </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="All">
+          <button class="buttonleft" onclick="plusDivs(-1)">&#10094;</button>
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="Photo/d69ed4ff-ac96-4a14-b164-3dd01094d3ee.jfif" alt="Slide 1" class="slides">
+            </div>
+
+            <div class="mySlides">
+                <img src="Photo/75bbbe8d-db88-4fe7-b8c1-5fd321c0649e.jfif" alt="Slide 2" class="slides">
+            </div>
+
+            <div class="mySlides">
+                <img src="Photo/a2f9f2fd-e034-44b9-997f-3cb3acb70409.jfif" alt="Slide 3" class="slides">
+            </div>
+
+            <div class="mySlides">
+                <img src="Photo/0bef8b66-9add-4150-bf4f-d93664e05cd2.jfif" alt="Slide 4" class="slides">
+            </div>
+        </div>
+      
+        <button class="buttonright" onclick="plusDivs(+1)">&#10095;</button>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+    <script>
+        var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+        
+    var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 8000);
+}
+    </script>
+
+</html>
